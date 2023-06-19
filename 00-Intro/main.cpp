@@ -149,35 +149,6 @@ void InitDirectX(HWND hWnd)
 
 	HRESULT hr = S_OK;
 
-	//
-	// Uncomment the following section to query graphic cards on the computer
-	//  
-
-	/*
-	IDXGIFactory* pFactory = NULL;
-	#pragma comment(lib, "dxgi")
-	hr = CreateDXGIFactory(__uuidof(IDXGIFactory), (void**)&pFactory);
-	if (hr != S_OK)
-	{
-		_com_error err(hr);
-		LPCTSTR errMsg = err.ErrorMessage();
-
-		DebugOut((wchar_t*)L"[ERROR] CreateDXGIFactory has failed %s %d %d %s\n", _W(__FILE__), __LINE__, hr, errMsg);
-		return;
-	}
-
-	IDXGIAdapter* pAdapter = NULL;
-	for (UINT i = 0; 
-			pFactory->EnumAdapters(i, &pAdapter) != DXGI_ERROR_NOT_FOUND; 
-     ++i) 
-	{
-		DXGI_ADAPTER_DESC adapterDesc;
-		pAdapter->GetDesc(&adapterDesc);
-		DebugOut((wchar_t*)L"[INFO] Adapter %d: %s\n",i, adapterDesc.Description);
-	}
-	*/
-
-	// Create the D3D device and the swap chain
 	hr = D3D10CreateDeviceAndSwapChain(NULL,
 		D3D10_DRIVER_TYPE_HARDWARE,
 		NULL,
@@ -354,22 +325,11 @@ void Update(DWORD dt)
 
 		brick_vx = -brick_vx;
 
-		//	//Why not having these logics would make the brick disappear sometimes?  
-		////	if (brick_x < 0)
-		////	{
-		////		brick_x = 0;
-		////	}
-		////	else if (brick_x > right_edge )
-		////	{
-		////		brick_x = right_edge;
-		////	}
+
 	}
 }
 
-/*
-	Render a frame
-	IMPORTANT: world status must NOT be changed during rendering
-*/
+
 void Render()
 {
 	if (pD3DDevice != NULL)
