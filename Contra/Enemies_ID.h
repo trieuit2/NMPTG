@@ -1,0 +1,64 @@
+#pragma once
+
+// Camera
+#define CAMERA 9999
+
+// Terrains
+#define TBLOCKER 10000
+#define TPLATFORM 10001
+#define TWATER 10002
+#define TDEADLY 10003
+#define TBRIDGE_S1 10004
+#define TMOVINGSTONE 10005
+#define TPLAYERBLOCKER 10006
+
+// Enemies
+
+#define INFARY 20
+#define INFARY_BASE 21
+
+#define RED_GUNNER 30
+#define RED_GUNNER_BASE 31
+#define BLUE_GUNNER 1030
+
+#define SNIPER 40
+
+#define SNEAKY_SNIPER 50
+
+#define SCUBA_DIVER 60
+
+#define BOMB_TOSSER 70
+#define BOMB_TOSSER_BASE 71
+
+#define TURRET 80
+#define ELITE_TURRET 1080
+#define TURRET_BASE 81
+#define ELITE_TURRET_BASE 1081
+
+#define CANNON 90
+
+#define Mine 100
+#define Mine_BASE 101
+
+#define FLY_DEF_ROBOT 111
+#define STAND_ROBOT 121
+
+#define MACHINE_GUNNER 130
+#define SHIELD_MACHINE_GUNNER 131//(?)
+
+#define FALLING_STONE 140 
+#define FLAME 150
+#define UP_BOX_STATION 160
+#define UP_BOX_FLYING 170
+
+#define BASE_CANNON_LEFT 180
+#define BASE_CANNON_RIGHT 190
+#define BASE_DOOR 200
+#define BASE_SNIPER 210
+#define BASE_BODY 220
+
+// Spawner
+#define SPAWNER_INFARY 11020
+#define SPAWNER_FALLING_STONE 11140
+#define SPAWNER_INFARY_S3_LEFT 11021
+#define SPAWNER_INFARY_S3_RIGHT 11022

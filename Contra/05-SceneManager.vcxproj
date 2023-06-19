@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{30b52332-21ee-43b1-91bf-b2494c04c34f}</ProjectGuid>
+    <RootNamespace>My05SceneManager</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Contra</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d10.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d10.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d10.lib;dxguid.lib;dinput8.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d10.lib;dxguid.lib;dinput8.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Animations.cpp" />
+    <ClCompile Include="CAnimation_OneLoop.cpp" />
+    <ClCompile Include="CharacterEffect.cpp" />
+    <ClCompile Include="Contra_GET_ANI.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="Enemy_Base_Door.cpp" />
+    <ClCompile Include="Enemy_Cannon.cpp" />
+    <ClCompile Include="Enemy_Cannon_Base.cpp" />
+    <ClCompile Include="Enemy_Infary.cpp" />
+    <ClCompile Include="Enemy_Jumper.cpp" />
+    <ClCompile Include="Enemy_RedGunner.cpp" />
+    <ClCompile Include="Enemy_ScubaDiver.cpp" />
+    <ClCompile Include="Enemy_SneakSniper.cpp" />
+    <ClCompile Include="Enemy_Sniper.cpp" />
+    <ClCompile Include="Enemy_Turret.cpp" />
+    <ClCompile Include="Equip_EnemyGun_Bomber.cpp" />
+    <ClCompile Include="Equip_EnemyGun_Cannon.cpp" />
+    <ClCompile Include="Equip_EnemyGun_N.cpp" />
+    <ClCompile Include="Equip_EnemyGun_ScubaDiver.cpp" />
+    <ClCompile Include="Equip_EnemyGun_SneakSniper.cpp" />
+    <ClCompile Include="Equip_EnemyGun_Sniper.cpp" />
+    <ClCompile Include="Equip_EnemyGun_Turret.cpp" />
+    <ClCompile Include="Equip_GunBase.cpp" />
+    <ClCompile Include="Equip_Gun_F.cpp" />
+    <ClCompile Include="Equip_Gun_L.cpp" />
+    <ClCompile Include="Equip_Gun_N.cpp" />
+    <ClCompile Include="Equip_Gun_M.cpp" />
+    <ClCompile Include="Equip_Gun_S.cpp" />
+    <ClCompile Include="Equip_PlayerGunBase.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Game_Blocker.cpp" />
+    <ClCompile Include="Game_Bridge_S1.cpp" />
+    <ClCompile Include="Game_Bullet.cpp" />
+    <ClCompile Include="Game_Character.cpp" />
+    <ClCompile Include="Game_Collision.cpp" />
+    <ClCompile Include="Game_DeadlyBlock.cpp" />
+    <ClCompile Include="CharacterEffect_Base.cpp" />
+    <ClCompile Include="Game_Enemy.cpp" />
+    <ClCompile Include="Game_KeyInput.cpp" />
+    <ClCompile Include="Game_Effect.cpp" />
+    <ClCompile Include="Game_Layer.cpp" />
+    <ClCompile Include="Game_MovableEnemy.cpp" />
+    <ClCompile Include="Game_MovableObject.cpp" />
+    <ClCompile Include="Game_ObjectBase.cpp" />
+    <ClCompile Include="Game_Picture.cpp" />
+    <ClCompile Include="Game_Picture_Static.cpp" />
+    <ClCompile Include="Game_Platform.cpp" />
+    <ClCompile Include="Game_Player.cpp" />
+    <ClCompile Include="Game_PlayerBlocker.cpp" />
+    <ClCompile Include="Game_Screen.cpp" />
+    <ClCompile Include="Game_Spawner.cpp" />
+    <ClCompile Include="Game_SpecialObject.cpp" />
+    <ClCompile Include="Game_StaticObject.cpp" />
+    <ClCompile Include="Game_StationEnemy.cpp" />
+    <ClCompile Include="Game_SweeperBlock.cpp" />
+    <ClCompile Include="Game_Terrain.cpp" />
+    <ClCompile Include="Game_TestBox.cpp" />
+    <ClCompile Include="Obj_BossBase_S1.cpp" />
+    <ClCompile Include="Obj_EnemyBullet_Bomb.cpp" />
+    <ClCompile Include="Obj_EnemyBullet_SBomb.cpp" />
+    <ClCompile Include="Obj_Upgrade.cpp" />
+    <ClCompile Include="Obj_UpgradeBase.cpp" />
+    <ClCompile Include="Obj_StationUpgradeBox.cpp" />
+    <ClCompile Include="Obj_FlyingUpgradeBox.cpp" />
+    <ClCompile Include="Game_Water.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MusicManager.cpp" />
+    <ClCompile Include="Obj_Bullet_F.cpp" />
+    <ClCompile Include="Obj_Bullet_L.cpp" />
+    <ClCompile Include="Obj_Bullet_N.cpp" />
+    <ClCompile Include="Obj_Bullet_R.cpp" />
+    <ClCompile Include="Obj_Bullet_S.cpp" />
+    <ClCompile Include="Obj_EnemyBullet_N.cpp" />
+    <ClCompile Include="Obj_FallingStone.cpp" />
+    <ClCompile Include="Obj_Flame.cpp" />
+    <ClCompile Include="Obj_MovingStone.cpp" />
+    <ClCompile Include="QuadTree\QuadTree.cpp" />
+    <ClCompile Include="QuadTree\SimpleVector.cpp" />
+    <ClCompile Include="Scene_Base.cpp" />
+    <ClCompile Include="Scene_Battle.cpp" />
+    <ClCompile Include="Scene_GameOver.cpp" />
+    <ClCompile Include="Scene_LoadingStage.cpp" />
+    <ClCompile Include="Scene_Start.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="Spatial.cpp" />
+    <ClCompile Include="spawnBulletHelper.cpp" />
+    <ClCompile Include="Spawner_FallingStone.cpp" />
+    <ClCompile Include="Spawner_Infary_Stage1.cpp" />
+    <ClCompile Include="Spawner_Infary_Stage3.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Sprites.cpp" />
+    <ClCompile Include="StageEventHandler_Base.cpp" />
+    <ClCompile Include="StageEventHandler_S1.cpp" />
+    <ClCompile Include="StageEventHandler_S3.cpp" />
+    <ClCompile Include="State_Base.cpp" />
+    <ClCompile Include="State_Contra_Base.cpp" />
+    <ClCompile Include="State_Contra_Die.cpp" />
+    <ClCompile Include="State_Contra_Dive.cpp" />
+    <ClCompile Include="State_Contra_Fall.cpp" />
+    <ClCompile Include="State_Contra_Idle.cpp" />
+    <ClCompile Include="State_Contra_Jump.cpp" />
+    <ClCompile Include="State_Contra_Lie.cpp" />
+    <ClCompile Include="State_Contra_Swim.cpp" />
+    <ClCompile Include="State_Contra_Walk.cpp" />
+    <ClCompile Include="State_Object_Active.cpp" />
+    <ClCompile Include="State_Object_Base.cpp" />
+    <ClCompile Include="State_Object_Emerge.cpp" />
+    <ClCompile Include="State_Object_Hide.cpp" />
+    <ClCompile Include="State_Object_Standby.cpp" />
+    <ClCompile Include="State_Station.cpp" />
+    <ClCompile Include="State_Station_Hide.cpp" />
+    <ClCompile Include="State_Turret_Active.cpp" />
+    <ClCompile Include="State_Turret_Base.cpp" />
+    <ClCompile Include="State_Turret_Emerge.cpp" />
+    <ClCompile Include="State_Turret_Hide.cpp" />
+    <ClCompile Include="Textures.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Word.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationFrame.h" />
+    <ClInclude Include="Animations.h" />
+    <ClInclude Include="CAnimation_OneLoop.h" />
+    <ClInclude Include="CharacterEffect.h" />
+    <ClInclude Include="Contra_ANI_ID.h" />
+    <ClInclude Include="Contra_GET_ANI.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="Enemies_ID.h" />
+    <ClInclude Include="Enemy_Base_Door.h" />
+    <ClInclude Include="Enemy_Cannon.h" />
+    <ClInclude Include="Enemy_Cannon_Base.h" />
+    <ClInclude Include="Enemy_Infary.h" />
+    <ClInclude Include="Enemy_Jumper.h" />
+    <ClInclude Include="Enemy_RedGunner.h" />
+    <ClInclude Include="Enemy_ScubaDiver.h" />
+    <ClInclude Include="Enemy_SneakSniper.h" />
+    <ClInclude Include="Enemy_Sniper.h" />
+    <ClInclude Include="Enemy_Turret.h" />
+    <ClInclude Include="Equip_EnemyGun_Bomber.h" />
+    <ClInclude Include="Equip_EnemyGun_Cannon.h" />
+    <ClInclude Include="Equip_EnemyGun_N.h" />
+    <ClInclude Include="Equip_EnemyGun_ScubaDiver.h" />
+    <ClInclude Include="Equip_EnemyGun_SneakSniper.h" />
+    <ClInclude Include="Equip_EnemyGun_Sniper.h" />
+    <ClInclude Include="Equip_EnemyGun_Turret.h" />
+    <ClInclude Include="Equip_GunBase.h" />
+    <ClInclude Include="Equip_Gun_F.h" />
+    <ClInclude Include="Equip_Gun_L.h" />
+    <ClInclude Include="Equip_Gun_M.h" />
+    <ClInclude Include="Equip_Gun_S.h" />
+    <ClInclude Include="Equip_PlayerGunBase.h" />
+    <ClInclude Include="fmod\fmod.h" />
+    <ClInclude Include="fmod\fmod.hpp" />
+    <ClInclude Include="fmod\fmod_codec.h" />
+    <ClInclude Include="fmod\fmod_common.h" />
+    <ClInclude Include="fmod\fmod_dsp.h" />
+    <ClInclude Include="fmod\fmod_dsp_effects.h" />
+    <ClInclude Include="fmod\fmod_errors.h" />
+    <ClInclude Include="fmod\fmod_output.h" />
+    <ClInclude Include="Equip_Gun_N.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Game_Blocker.h" />
+    <ClInclude Include="Game_Bridge_S1.h" />
+    <ClInclude Include="Game_Bullet.h" />
+    <ClInclude Include="Game_Character.h" />
+    <ClInclude Include="Game_Collision.h" />
+    <ClInclude Include="Game_DeadlyBlock.h" />
+    <ClInclude Include="CharacterEffect_Base.h" />
+    <ClInclude Include="Game_Enemy.h" />
+    <ClInclude Include="Game_KeyInput.h" />
+    <ClInclude Include="Game_Effect.h" />
+    <ClInclude Include="Game_Layer.h" />
+    <ClInclude Include="Game_MovableEnemy.h" />
+    <ClInclude Include="Game_MovableObject.h" />
+    <ClInclude Include="Game_ObjectBase.h" />
+    <ClInclude Include="Game_Picture.h" />
+    <ClInclude Include="Game_Picture_Static.h" />
+    <ClInclude Include="Game_Platform.h" />
+    <ClInclude Include="Game_Player.h" />
+    <ClInclude Include="Game_PlayerBlocker.h" />
+    <ClInclude Include="Game_Screen.h" />
+    <ClInclude Include="Game_Spawner.h" />
+    <ClInclude Include="Game_SpecialObject.h" />
+    <ClInclude Include="Game_StaticObject.h" />
+    <ClInclude Include="Game_StationEnemy.h" />
+    <ClInclude Include="Game_SweeperBlock.h" />
+    <ClInclude Include="Game_Terrain.h" />
+    <ClInclude Include="Game_TestBox.h" />
+    <ClInclude Include="Obj_BossBase_S1.h" />
+    <ClInclude Include="Obj_EnemyBullet_Bomb.h" />
+    <ClInclude Include="Obj_EnemyBullet_SBomb.h" />
+    <ClInclude Include="Obj_Upgrade.h" />
+    <ClInclude Include="Obj_UpgradeBase.h" />
+    <ClInclude Include="Obj_StationUpgradeBox.h" />
+    <ClInclude Include="Obj_FlyingUpgradeBox.h" />
+    <ClInclude Include="Game_Water.h" />
+    <ClInclude Include="KeyEventHandler.h" />
+    <ClInclude Include="MusicManager.h" />
+    <ClInclude Include="Obj_Bullet_F.h" />
+    <ClInclude Include="Obj_Bullet_L.h" />
+    <ClInclude Include="Obj_Bullet_N.h" />
+    <ClInclude Include="Obj_Bullet_M.h" />
+    <ClInclude Include="Obj_Bullet_S.h" />
+    <ClInclude Include="Obj_EnemyBullet_N.h" />
+    <ClInclude Include="Obj_FallingStone.h" />
+    <ClInclude Include="Obj_Flame.h" />
+    <ClInclude Include="Obj_MovingStone.h" />
+    <ClInclude Include="QuadTree\QuadTree.h" />
+    <ClInclude Include="QuadTree\SimpleVector.h" />
+    <ClInclude Include="Scene_Base.h" />
+    <ClInclude Include="Scene_Battle.h" />
+    <ClInclude Include="Scene_GameOver.h" />
+    <ClInclude Include="Scene_LoadingStage.h" />
+    <ClInclude Include="Scene_Start.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="Spatial.h" />
+    <ClInclude Include="spawnBulletHelper.h" />
+    <ClInclude Include="Spawner_FallingStone.h" />
+    <ClInclude Include="Spawner_Infary_Stage1.h" />
+    <ClInclude Include="Spawner_Infary_Stage3.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Sprites.h" />
+    <ClInclude Include="StageEventHandler_Base.h" />
+    <ClInclude Include="StageEventHandler_S1.h" />
+    <ClInclude Include="StageEventHandler_S3.h" />
+    <ClInclude Include="State_Base.h" />
+    <ClInclude Include="State_CONST.h" />
+    <ClInclude Include="State_Contra_Base.h" />
+    <ClInclude Include="State_Contra_Die.h" />
+    <ClInclude Include="State_Contra_Dive.h" />
+    <ClInclude Include="State_Contra_Fall.h" />
+    <ClInclude Include="State_Contra_Idle.h" />
+    <ClInclude Include="State_Contra_Jump.h" />
+    <ClInclude Include="State_Contra_Lie.h" />
+    <ClInclude Include="State_Contra_Swim.h" />
+    <ClInclude Include="State_Contra_Walk.h" />
+    <ClInclude Include="State_Object_Active.h" />
+    <ClInclude Include="State_Object_Base.h" />
+    <ClInclude Include="State_Object_Emerge.h" />
+    <ClInclude Include="State_Object_Hide.h" />
+    <ClInclude Include="State_Object_Standby.h" />
+    <ClInclude Include="State_Station.h" />
+    <ClInclude Include="State_Station_Hide.h" />
+    <ClInclude Include="State_Turret_Active.h" />
+    <ClInclude Include="State_Turret_Base.h" />
+    <ClInclude Include="State_Turret_Emerge.h" />
+    <ClInclude Include="State_Turret_Hide.h" />
+    <ClInclude Include="STL_storage.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Textures.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Word.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="brick.txt" />
+    <Text Include="cloud.txt" />
+    <Text Include="coin.txt" />
+    <Text Include="contra-level.txt" />
+    <Text Include="contra-scene01.txt" />
+    <Text Include="contra-scene02.txt" />
+    <Text Include="contra.txt" />
+    <Text Include="ContraMapStage1BG.txt" />
+    <Text Include="CONTRA_BULLET.txt" />
+    <Text Include="goomba.txt" />
+    <Text Include="INFARY.txt" />
+    <Text Include="map_stage_1.txt" />
+    <Text Include="mario-sample.txt" />
+    <Text Include="scene0005.txt" />
+    <Text Include="scene01.txt" />
+    <Text Include="scene02.txt" />
+    <Text Include="SNIPER.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="music\bgm\1 - Title Screen.mp3" />
+    <Media Include="music\bgm\10 - Ending.mp3" />
+    <Media Include="music\bgm\11 - Game Over.mp3" />
+    <Media Include="music\bgm\2 - Jungle  Hangar (Stages 1  7).mp3" />
+    <Media Include="music\bgm\3 - Bases I  II (Stages 2  4).mp3" />
+    <Media Include="music\bgm\4 - Base Boss.mp3" />
+    <Media Include="music\bgm\5 - Waterfall (Stage 3).mp3" />
+    <Media Include="music\bgm\6 - Snowfield (Stage 5).mp3" />
+    <Media Include="music\bgm\7 - Energy Zone (Stage 6).mp3" />
+    <Media Include="music\bgm\8 - Alien%27s Lair (Stage 8).mp3" />
+    <Media Include="music\bgm\9 - Victory.mp3" />
+    <Media Include="music\sfx\1-up.mp3" />
+    <Media Include="music\sfx\area-clear.mp3" />
+    <Media Include="music\sfx\base-explosion.mp3" />
+    <Media Include="music\sfx\boss-defeat.mp3" />
+    <Media Include="music\sfx\death.mp3" />
+    <Media Include="music\sfx\electro.mp3" />
+    <Media Include="music\sfx\enemy-gun-2.mp3" />
+    <Media Include="music\sfx\enemy-gun.mp3" />
+    <Media Include="music\sfx\enemy-hit.mp3" />
+    <Media Include="music\sfx\explode-2.mp3" />
+    <Media Include="music\sfx\explode.mp3" />
+    <Media Include="music\sfx\flame-2.mp3" />
+    <Media Include="music\sfx\flame-3.mp3" />
+    <Media Include="music\sfx\flame-gun.mp3" />
+    <Media Include="music\sfx\flame.mp3" />
+    <Media Include="music\sfx\game-over.mp3" />
+    <Media Include="music\sfx\laser.mp3" />
+    <Media Include="music\sfx\machine-gun.mp3" />
+    <Media Include="music\sfx\major-explosion.mp3" />
+    <Media Include="music\sfx\pause.mp3" />
+    <Media Include="music\sfx\rapid-2.mp3" />
+    <Media Include="music\sfx\rapid.mp3" />
+    <Media Include="music\sfx\red-falcon.mp3" />
+    <Media Include="music\sfx\rifle.mp3" />
+    <Media Include="music\sfx\spread.mp3" />
+    <Media Include="music\sfx\title.mp3" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets" Condition="Exists('..\packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets'))" />
+  </Target>
+</Project>

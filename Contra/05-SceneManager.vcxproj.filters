@@ -1,0 +1,987 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Animations.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Infary.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Jumper.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_RedGunner.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_ScubaDiver.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_SneakSniper.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Sniper.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Turret.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_MovableEnemy.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_StationEnemy.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Base.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Die.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Fall.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Idle.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Jump.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Swim.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Walk.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Station.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Station_Hide.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Spatial.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Effect.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_N.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Platform.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_StaticObject.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Terrain.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Water.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Collision.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Character.cpp">
+      <Filter>Source Files\Object\MoveObject\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicManager.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Contra_GET_ANI.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_MovableObject.cpp">
+      <Filter>Source Files\Object\MoveObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_ObjectBase.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="spawnBulletHelper.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_TestBox.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Screen.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Player.cpp">
+      <Filter>Source Files\Object\MoveObject\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Blocker.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Base.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_EnemyBullet_N.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Enemy.cpp">
+      <Filter>Source Files\Object\MoveObject\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Bullet.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_R.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_DeadlyBlock.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_SweeperBlock.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_R.cpp" />
+    <ClCompile Include="QuadTree\SimpleVector.cpp">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTree\QuadTree.cpp">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Header Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Word.cpp">
+      <Filter>Header Files\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Picture_Static.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Bridge_S1.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_L.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_F.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_Gun_F.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Bullet_S.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Picture.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Spawner.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner_Infary_Stage1.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StageEventHandler_Base.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="StageEventHandler_S1.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="StageEventHandler_S3.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_N.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_Sniper.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_Gun_L.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_Gun_N.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_Gun_M.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_Gun_S.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_GunBase.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_KeyInput.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Cannon.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_GameOver.cpp">
+      <Filter>Source Files\GameCore\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Start.cpp">
+      <Filter>Source Files\GameCore\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Dive.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Contra_Lie.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Turret_Active.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Turret_Base.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_MovingStone.cpp">
+      <Filter>Source Files\Object\MoveObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_PlayerBlocker.cpp">
+      <Filter>Source Files\Object\MoveObject\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_GunBase.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="CAnimation_OneLoop.cpp">
+      <Filter>Source Files\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner_FallingStone.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Object_Active.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Object_Base.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Object_Emerge.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Object_Standby.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_FallingStone.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_SpecialObject.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Turret_Hide.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Turret_Emerge.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_Turret.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_Cannon.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_SneakSniper.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Battle.cpp">
+      <Filter>Source Files\GameCore\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Base.cpp">
+      <Filter>Source Files\GameCore\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_LoadingStage.cpp">
+      <Filter>Source Files\GameCore\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_UpgradeBase.cpp">
+      <Filter>Source Files\Object\MoveObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Upgrade.cpp">
+      <Filter>Source Files\Object\MoveObject</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Object_Hide.cpp">
+      <Filter>Source Files\CharState</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_PlayerGunBase.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Flame.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_StationUpgradeBox.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_FlyingUpgradeBox.cpp">
+      <Filter>Source Files\Object\MoveObject\Character\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner_Infary_Stage3.cpp">
+      <Filter>Source Files\Object\StaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Equip_EnemyGun_ScubaDiver.cpp">
+      <Filter>Source Files\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterEffect_Base.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterEffect.cpp">
+      <Filter>Source Files\GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_EnemyBullet_SBomb.cpp">
+      <Filter>Source Files\Object\MoveObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_Cannon_Base.cpp" />
+    <ClCompile Include="Equip_EnemyGun_Bomber.cpp" />
+    <ClCompile Include="Obj_EnemyBullet_Bomb.cpp" />
+    <ClCompile Include="Enemy_Base_Door.cpp" />
+    <ClCompile Include="Game_Layer.cpp" />
+    <ClCompile Include="Obj_BossBase_S1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Animations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contra_ANI_ID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contra_GET_ANI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Blocker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_KeyInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_MovableObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_ObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_StaticObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Water.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Battle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spatial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Fall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Idle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Jump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Swim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Walk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemies_ID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_TestBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_RedGunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_ScubaDiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_SneakSniper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Sniper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Turret.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_MovableEnemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Bullet_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_StationEnemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Station.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Station_Hide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Die.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_dsp_effects.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_errors.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_output.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod.hpp">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_codec.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_common.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod\fmod_dsp.h">
+      <Filter>Source Files\GameCore\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_GunBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_Gun_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Infary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Jumper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_GunBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STL_storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_EnemyBullet_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_Gun_M.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_Sniper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_N.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Bullet_M.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_DeadlyBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_SweeperBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_Gun_L.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_Gun_S.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Picture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Bullet_L.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Bullet_S.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_LoadingStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spawnBulletHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StageEventHandler_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StageEventHandler_S1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StageEventHandler_S3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree\SimpleVector.h">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree\QuadTree.h">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Word.h">
+      <Filter>Header Files\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_Gun_F.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Bridge_S1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Picture_Static.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Spawner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Bullet_F.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner_Infary_Stage1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_FallingStone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnimation_OneLoop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner_FallingStone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_SpecialObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Object_Active.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Object_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Object_Emerge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Object_Standby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Lie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Turret_Active.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Contra_Dive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Turret_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Turret_Hide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Turret_Emerge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_Turret.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_MovingStone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_PlayerBlocker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Cannon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_Cannon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_SneakSniper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Start.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_GameOver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_UpgradeBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Upgrade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Object_Hide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_PlayerGunBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Flame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_FlyingUpgradeBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_StationUpgradeBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State_CONST.h" />
+    <ClInclude Include="Spawner_Infary_Stage3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Equip_EnemyGun_ScubaDiver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterEffect_Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_EnemyBullet_SBomb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_Cannon_Base.h" />
+    <ClInclude Include="Equip_EnemyGun_Bomber.h" />
+    <ClInclude Include="Obj_EnemyBullet_Bomb.h" />
+    <ClInclude Include="Enemy_Base_Door.h" />
+    <ClInclude Include="Game_Layer.h" />
+    <ClInclude Include="Obj_BossBase_S1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="brick.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="cloud.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="coin.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="contra.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="contra-level.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ContraMapStage1BG.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="contra-scene01.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="contra-scene02.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="goomba.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="mario-sample.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="scene01.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="scene02.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="scene0005.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="CONTRA_BULLET.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="INFARY.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="SNIPER.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="map_stage_1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b3796e23-7421-47d1-85bb-9dbd4f8d6922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{01f821c7-b8f6-49cf-8305-71a7875de09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{314021af-3643-4867-b460-c6d6b3824924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Music">
+      <UniqueIdentifier>{a729021d-a4e1-4a52-b4a9-770d0ce7dec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Music\sfx">
+      <UniqueIdentifier>{2027246e-03ae-4da3-b7af-f5822157f876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Music\bgm">
+      <UniqueIdentifier>{0081ce23-2dd2-4dc6-ba73-76b0ca8e28d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sprite">
+      <UniqueIdentifier>{a1e85d9e-9c94-46ae-b77b-fbd519646b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object">
+      <UniqueIdentifier>{724683a2-6b95-4a7d-9b8e-1b6181355425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameCore">
+      <UniqueIdentifier>{94793b07-f681-4240-86bf-c5c29965c4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CharState">
+      <UniqueIdentifier>{212a0d87-c8f9-4aaa-8777-e45542e6faa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\MoveObject">
+      <UniqueIdentifier>{0bb3cfc3-518c-417f-a66b-f03540aa7e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\MoveObject\Bullet">
+      <UniqueIdentifier>{0c011c6b-7c1f-4439-bfbc-6554507dac3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\StaticObject">
+      <UniqueIdentifier>{16696060-868f-4572-9221-e553210ab0a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameCore\fmod">
+      <UniqueIdentifier>{f9629b2f-9f0b-4242-ac07-4f60a2ab1e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\MoveObject\Character">
+      <UniqueIdentifier>{9e6eed07-07a8-4424-88a3-ddf11c03f576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\MoveObject\Character\Enemy">
+      <UniqueIdentifier>{49de5c78-298f-4414-ae59-ef4fb86dc94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QuadTree">
+      <UniqueIdentifier>{30320bf2-53dd-42d5-8dcb-b5ecaa55bc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Font">
+      <UniqueIdentifier>{741d1aaa-ecae-46c4-9f5b-a64c25a944d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Equip">
+      <UniqueIdentifier>{17826895-56f3-415c-a9da-b89971c29381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameCore\Scene">
+      <UniqueIdentifier>{b1fe2d8f-f6a5-4169-8ea0-fc7e10443a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="music\sfx\area-clear.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\base-explosion.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\boss-defeat.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\death.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\electro.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\enemy-gun.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\enemy-gun-2.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\enemy-hit.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\explode.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\explode-2.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\flame.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\flame-2.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\flame-3.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\flame-gun.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\game-over.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\laser.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\machine-gun.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\major-explosion.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\pause.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\rapid.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\rapid-2.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\red-falcon.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\rifle.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\spread.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\title.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\sfx\1-up.mp3">
+      <Filter>Resource Files\Music\sfx</Filter>
+    </Media>
+    <Media Include="music\bgm\4 - Base Boss.mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\5 - Waterfall (Stage 3).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\6 - Snowfield (Stage 5).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\7 - Energy Zone (Stage 6).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\8 - Alien%27s Lair (Stage 8).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\9 - Victory.mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\10 - Ending.mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\11 - Game Over.mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\1 - Title Screen.mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\2 - Jungle  Hangar (Stages 1  7).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+    <Media Include="music\bgm\3 - Bases I  II (Stages 2  4).mp3">
+      <Filter>Resource Files\Music\bgm</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

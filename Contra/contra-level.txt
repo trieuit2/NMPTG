@@ -1,0 +1,35 @@
+[TEXTURES]
+-100	textures\bbox.png
+0	textures\contra2-transparent.png
+1	textures\contra2-red.png
+9	textures\bullet.png
+10	textures\foes.png
+20	textures\font2-2.png
+21	textures\blackbox.png
+100	textures\enemies_sprites\0.png
+101	textures\enemies_sprites\1.png
+102	textures\Contra-start.png
+103	textures\ContraSheet4.png
+104	textures\laser-bullet.png
+105	textures\ContraSheet8.png
+106	textures\boss2.png
+#20	textures\misc.png
+
+
+[ASSETS]
+contra.txt
+contra-B.txt
+CONTRA_BULLET.txt
+INFARY.txt
+SNIPER.txt
+WORD.txt
+bb.txt
+turret.txt
+red_turret.txt
+sneak_sniper.txt
+army_destroyed.txt
+construct_destroyed.txt
+laser.txt
+upgrade.txt
+BOSS.txt
+scuba_diver.txt
